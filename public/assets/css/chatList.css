@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#supBar{
+    width: 100%;
+    height: 100px;
+    background-color: #121317;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.button{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121317;
+    cursor: pointer;
+}
+
+#chatList{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0F1021;
+    overflow-y: scroll;
+}
+
+#subBar{
+    width: 100%;
+    height: 70px;
+    background-color: #121317;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.user{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: #070810;
+    cursor: pointer;
+    color:white;
+}
+
+
+@font-face {
+    font-family: Champagne;
+    src: url(./fonts/Champagne/Champagne\ &\ Limousines\ Bold.ttf);
+}
+.searchBar{
+    width: 20%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background-color: rgb(14, 13, 13);
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-family: Champagne;
+    font-size: 15px;
+    outline: none;
+    margin-left: 20px;
+}
+
+
+
+
+#placeholder{
+    position: absolute;
+    left: 50px;
+    color: white;
+    font-family: Champagne;
+}
+
+#lens{
+    position: absolute;
+    left: 30px;
+    color: #FFCEE4;
+}
+
+#list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #070810;
+    overflow-y: scroll;
+}

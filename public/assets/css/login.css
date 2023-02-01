@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+
+#background{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #0f0f13;
+    overflow-y: scroll;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(./fonts/Raleway/Raleway-Regular.ttf);
+}
+.logo{
+    width: 80%;
+    height: 20%;
+    
+    position: absolute;
+    top: 50px;
+}
+
+.logoUp{
+    top: 50px;
+    transition: top 0.5s ease-out;
+}
+
+#clear{
+    border: 1px solid red;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 0px;
+}
+
+
+#signUp{
+    width: 100px;
+    height: 50px;
+    background-color: #5e6ad6;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'imprint-mt-shadow-regular', sans-serif;
+    position: relative;
+}
+
+
+#signIn{
+    width: 100px;
+    height: 50px;
+    background-color: rgba(253, 174, 255, 0.5);
+    border-radius: 15px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: 'imprint-mt-shadow-regular', sans-serif;
+}
+
+
+
+#usernameLine{
+    display: flex;
+    align-items: center;
+}
+
+#signInUpContainer{
+    position: absolute;
+    bottom: 15%;
+}
+
+.popUp{
+    width: 100%;
+    height: 85%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: -570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 15px;
+    font-family: 'imprint-mt-shadow-regular', sans-serif;
+    z-index: 100;
+    transition: bottom 0.5s ease-out;
+}
+.popUpBack{
+    width: 90%;
+    height: 85%;
+    background-color: rgba(213, 213, 213, 0.7);
+    position: absolute;
+    bottom: -550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 15px;
+    font-family: 'imprint-mt-shadow-regular', sans-serif;
+    z-index: 0;
+    transition: bottom 0.5s ease-out;
+}
+
+.popUpUp{
+    bottom: -20px;
+    transition: bottom 0.5s ease-out;
+}
+
+.popUpDown{
+    bottom: -570px;
+    transition: bottom 0.5s ease-out;
+}
+
+.popUpBackUp{
+    bottom: -10px;
+    transition: bottom 0.5s ease-out;
+}
+.popUpBackDown{
+    bottom: -550px;
+    transition: bottom 0.5s ease-out;
+}
+
+.popUpBackFront{
+    z-index: 100;
+    transition: z-index 0.5s ease-out;
+}
+
+.popUpFrontBack{
+    z-index: 0;
+    transition: z-index 0.5s ease-out;
+}
+
+.popUpFrontShrink{
+    width: 90%;
+    opacity: 0.5;
+    transition: width 1s ease-out;
+}
+
+.popUpBackEnlarge{
+    width: 100%;
+    background-color: white;
+    transition: width  1s ease-out;
+}
+
+.popUpBackDown{
+    bottom: -30px;
+    transition: bottom 0.5s ease-out;
+}
+
+
+
+
+.form{
+    width: 300px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid rgb(112, 112, 112);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+#formContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 260px;
+    font-family: 'imprint-mt-shadow-regular', sans-serif;
+}
+
+#submit{
+    font-family: 'imprint-mt-shadow-regular', sans-serif;
+    width: 300px;
+    height: 50px;
+    background-image: linear-gradient(to right, #FDAEFF, #5E6AD6);
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.5);
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+#terms{
+    width: 15px;
+    height: 15px;
+}
+
+#login{
+    cursor: pointer;
+}
+
+#forgotPW{
+    cursor: pointer;
+}
+#error{
+    color: red;
+    font-size: 15px;
+    font-family: 'imprint-mt-shadow-regular', sans-serif;
+}

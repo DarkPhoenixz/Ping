@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link id="css" rel="stylesheet" href="assets/css/login.css">
+    <link href="https://www.dafontfree.net/embed/aW1wcmludC1tdC1zaGFkb3ctcmVndWxhciZkYXRhLzI1L2kvMTI5NjcxL0ltcHJpbnRNVFNoYWRvdy50dGY" rel="stylesheet" type="text/css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div id="background">
+        <div id="clear"></div>
+        <div class="logo">
+            <img src="./assets/img/logo2.png" width="100%">
+        </div>
+
+        <div id="signInUpContainer">
+            <div id="signUp">Sign up</div>
+            <div id="signIn">Sign in</div>
+        </div>   
+        
+        <div class="popUpBack">
+        </div>
+        <div class="popUp">
+            <H2 style="color: rgb(75, 75, 75); margin-top: 30px;">CREATE AN ACCOUNT</H2>
+    <div id="formContainer">
+        <input type="text" id="username" placeholder="Your username" class="form">
+        <input type="text" id="email" placeholder="Your mail" class="form">
+        <input type="password" id="password" placeholder="Your password" class="form">
+        <input type="password" id="password2" placeholder="Repeat password" class="form">
+    </div> <div id="error"></div><br>
+    <form action="">
+        <input type="checkbox" id="terms" name="terms"> 
+        <label for="terms" style="color: rgb(75, 75, 75);">I agree all statements in <u> <b> Terms of service. </b> </u> </label>
+    </form>
+    <br><input type="submit" id="submit">
+
+    <br><div id="forgotPW"><h3 style="color: rgb(75, 75, 75);"> <u> Forgot your password? </u> </h3></div>
+    <br><div id="login"><h4 style="color: rgb(75, 75, 75);"> <u> Login </u></h4></div>
+        </div>
+        
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
